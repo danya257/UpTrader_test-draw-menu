@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    {% load menu_extras %}
+</head>
+<body style="background-color: #cbb9d9">
+    <div class="container">
+        <h1 align="center">Up Trader test_draw_menu</h1>
+        <div    style=" display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;" >
+           <button style="
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+">{% draw_menu 'меню' %} </button>
+            <br>
+            <br>
+            <button style="
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+"> {% draw_menu 'Услуги' %}</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
